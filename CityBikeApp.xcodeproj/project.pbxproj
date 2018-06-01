@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7EBC286620C192EF007842AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC286520C192EF007842AF /* AppDelegate.swift */; };
+		7EBC286820C192F0007842AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC286720C192F0007842AF /* ViewController.swift */; };
+		7EBC286B20C192F0007842AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EBC286920C192F0007842AF /* Main.storyboard */; };
+		7EBC286D20C192F3007842AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EBC286C20C192F3007842AF /* Assets.xcassets */; };
+		7EBC287020C192F3007842AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EBC286E20C192F3007842AF /* LaunchScreen.storyboard */; };
+		7EBC287820C1938E007842AF /* BikeStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC287720C1938E007842AF /* BikeStation.swift */; };
+		7EBC287A20C193AE007842AF /* BikeStationMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC287920C193AE007842AF /* BikeStationMarkerView.swift */; };
+		7EBC287C20C193D1007842AF /* BikeStationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC287B20C193D1007842AF /* BikeStationView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7EBC286220C192EF007842AF /* CityBikeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityBikeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EBC286520C192EF007842AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7EBC286720C192F0007842AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7EBC286A20C192F0007842AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7EBC286C20C192F3007842AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7EBC286F20C192F3007842AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7EBC287120C192F3007842AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EBC287720C1938E007842AF /* BikeStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStation.swift; sourceTree = "<group>"; };
+		7EBC287920C193AE007842AF /* BikeStationMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationMarkerView.swift; sourceTree = "<group>"; };
+		7EBC287B20C193D1007842AF /* BikeStationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EBC285F20C192EF007842AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7EBC285920C192EF007842AF = {
+			isa = PBXGroup;
+			children = (
+				7EBC286420C192EF007842AF /* CityBikeApp */,
+				7EBC286320C192EF007842AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7EBC286320C192EF007842AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EBC286220C192EF007842AF /* CityBikeApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7EBC286420C192EF007842AF /* CityBikeApp */ = {
+			isa = PBXGroup;
+			children = (
+				7EBC286520C192EF007842AF /* AppDelegate.swift */,
+				7EBC287720C1938E007842AF /* BikeStation.swift */,
+				7EBC287920C193AE007842AF /* BikeStationMarkerView.swift */,
+				7EBC287B20C193D1007842AF /* BikeStationView.swift */,
+				7EBC286720C192F0007842AF /* ViewController.swift */,
+				7EBC286920C192F0007842AF /* Main.storyboard */,
+				7EBC286C20C192F3007842AF /* Assets.xcassets */,
+				7EBC286E20C192F3007842AF /* LaunchScreen.storyboard */,
+				7EBC287120C192F3007842AF /* Info.plist */,
+			);
+			path = CityBikeApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7EBC286120C192EF007842AF /* CityBikeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EBC287420C192F3007842AF /* Build configuration list for PBXNativeTarget "CityBikeApp" */;
+			buildPhases = (
+				7EBC285E20C192EF007842AF /* Sources */,
+				7EBC285F20C192EF007842AF /* Frameworks */,
+				7EBC286020C192EF007842AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CityBikeApp;
+			productName = CityBikeApp;
+			productReference = 7EBC286220C192EF007842AF /* CityBikeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EBC285A20C192EF007842AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Clemens Stift";
+				TargetAttributes = {
+					7EBC286120C192EF007842AF = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 7EBC285D20C192EF007842AF /* Build configuration list for PBXProject "CityBikeApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7EBC285920C192EF007842AF;
+			productRefGroup = 7EBC286320C192EF007842AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7EBC286120C192EF007842AF /* CityBikeApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7EBC286020C192EF007842AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EBC287020C192F3007842AF /* LaunchScreen.storyboard in Resources */,
+				7EBC286D20C192F3007842AF /* Assets.xcassets in Resources */,
+				7EBC286B20C192F0007842AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EBC285E20C192EF007842AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EBC287C20C193D1007842AF /* BikeStationView.swift in Sources */,
+				7EBC287A20C193AE007842AF /* BikeStationMarkerView.swift in Sources */,
+				7EBC286820C192F0007842AF /* ViewController.swift in Sources */,
+				7EBC286620C192EF007842AF /* AppDelegate.swift in Sources */,
+				7EBC287820C1938E007842AF /* BikeStation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7EBC286920C192F0007842AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EBC286A20C192F0007842AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7EBC286E20C192F3007842AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EBC286F20C192F3007842AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7EBC287220C192F3007842AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7EBC287320C192F3007842AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EBC287520C192F3007842AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9QNXTMAAKG;
+				INFOPLIST_FILE = CityBikeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BlockForce.CityBikeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7EBC287620C192F3007842AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9QNXTMAAKG;
+				INFOPLIST_FILE = CityBikeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BlockForce.CityBikeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EBC285D20C192EF007842AF /* Build configuration list for PBXProject "CityBikeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EBC287220C192F3007842AF /* Debug */,
+				7EBC287320C192F3007842AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EBC287420C192F3007842AF /* Build configuration list for PBXNativeTarget "CityBikeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EBC287520C192F3007842AF /* Debug */,
+				7EBC287620C192F3007842AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7EBC285A20C192EF007842AF /* Project object */;
+}
