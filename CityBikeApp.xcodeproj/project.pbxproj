@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E226AEA20C4349400F30376 /* Citybikes.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E226AE920C4349400F30376 /* Citybikes.json */; };
 		7EBC286620C192EF007842AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC286520C192EF007842AF /* AppDelegate.swift */; };
 		7EBC286820C192F0007842AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC286720C192F0007842AF /* ViewController.swift */; };
 		7EBC286B20C192F0007842AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EBC286920C192F0007842AF /* Main.storyboard */; };
 		7EBC286D20C192F3007842AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EBC286C20C192F3007842AF /* Assets.xcassets */; };
 		7EBC287020C192F3007842AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EBC286E20C192F3007842AF /* LaunchScreen.storyboard */; };
 		7EBC287820C1938E007842AF /* BikeStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC287720C1938E007842AF /* BikeStation.swift */; };
-		7EBC287A20C193AE007842AF /* BikeStationMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC287920C193AE007842AF /* BikeStationMarkerView.swift */; };
 		7EBC287C20C193D1007842AF /* BikeStationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC287B20C193D1007842AF /* BikeStationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E226AE920C4349400F30376 /* Citybikes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Citybikes.json; sourceTree = "<group>"; };
 		7EBC286220C192EF007842AF /* CityBikeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityBikeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EBC286520C192EF007842AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7EBC286720C192F0007842AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7EBC286720C192F0007842AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7EBC286A20C192F0007842AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7EBC286C20C192F3007842AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EBC286F20C192F3007842AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EBC287120C192F3007842AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EBC287720C1938E007842AF /* BikeStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStation.swift; sourceTree = "<group>"; };
-		7EBC287920C193AE007842AF /* BikeStationMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationMarkerView.swift; sourceTree = "<group>"; };
 		7EBC287B20C193D1007842AF /* BikeStationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,9 +60,9 @@
 		7EBC286420C192EF007842AF /* CityBikeApp */ = {
 			isa = PBXGroup;
 			children = (
+				7E226AE920C4349400F30376 /* Citybikes.json */,
 				7EBC286520C192EF007842AF /* AppDelegate.swift */,
 				7EBC287720C1938E007842AF /* BikeStation.swift */,
-				7EBC287920C193AE007842AF /* BikeStationMarkerView.swift */,
 				7EBC287B20C193D1007842AF /* BikeStationView.swift */,
 				7EBC286720C192F0007842AF /* ViewController.swift */,
 				7EBC286920C192F0007842AF /* Main.storyboard */,
@@ -132,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EBC287020C192F3007842AF /* LaunchScreen.storyboard in Resources */,
+				7E226AEA20C4349400F30376 /* Citybikes.json in Resources */,
 				7EBC286D20C192F3007842AF /* Assets.xcassets in Resources */,
 				7EBC286B20C192F0007842AF /* Main.storyboard in Resources */,
 			);
@@ -145,7 +146,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EBC287C20C193D1007842AF /* BikeStationView.swift in Sources */,
-				7EBC287A20C193AE007842AF /* BikeStationMarkerView.swift in Sources */,
 				7EBC286820C192F0007842AF /* ViewController.swift in Sources */,
 				7EBC286620C192EF007842AF /* AppDelegate.swift in Sources */,
 				7EBC287820C1938E007842AF /* BikeStation.swift in Sources */,

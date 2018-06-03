@@ -9,10 +9,10 @@
 import Foundation
 import MapKit
 
-class ArtworkMarkerView: MKMarkerAnnotationView {
+class BikestationMarkerView: MKMarkerAnnotationView {
     override var annotation: MKAnnotation? {
         willSet {
-            guard let artwork = newValue as? Artwork else { return }
+            guard let artwork = newValue as? BikeStation else { return }
             canShowCallout = true
             calloutOffset = CGPoint(x: -5, y: 5)
             rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
@@ -27,10 +27,10 @@ class ArtworkMarkerView: MKMarkerAnnotationView {
     }
 }
 
-class ArtworkView: MKAnnotationView {
+class BikeStationView: MKAnnotationView {
     override var annotation: MKAnnotation? {
         willSet {
-            guard let artwork = newValue as? Artwork else {return}
+            guard let artwork = newValue as? BikeStation else {return}
             canShowCallout = true
             calloutOffset = CGPoint(x: -5, y: 5)
             let mapsButton = UIButton(frame: CGRect(origin: CGPoint.zero,

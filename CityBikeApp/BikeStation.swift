@@ -10,7 +10,7 @@ import Foundation
 import MapKit
 import Contacts
 
-class Artwork: NSObject, MKAnnotation {
+class BikeStation: NSObject, MKAnnotation {
     let title: String?
     let locationName: String
     let discipline: String
@@ -25,17 +25,17 @@ class Artwork: NSObject, MKAnnotation {
         super.init()
     }
     
-    // TODO Change this method to load from different JSON.
-    init?(json: [Any]) {
-        self.title = json[16] as? String ?? "No Title"
-        self.locationName = json[11] as! String
-        self.discipline = json[15] as! String
-        if let latitude = Double(json[18] as! String),
-            let longitude = Double(json[19] as! String) {
-            self.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-        } else {
-            self.coordinate = CLLocationCoordinate2D()
-        }
+    init?(bikeStationDictionary: [String: Any]) {
+        self.title = bikeStationDictionary["name"] as? String ?? "No Title"
+        self.locationName = bikeStationDictionary["description"] as! String
+        self.discipline = bikeStationDictionary["status"] as! String
+        let latitude = bikeStationDictionary["longitude"] as! Double
+        let longitude = bikeStationDictionary["latitude"] as! Double
+        
+        self.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        
+        debugPrint(self.coordinate)
+        
     }
     
     // TODO Change this to return a different location name.

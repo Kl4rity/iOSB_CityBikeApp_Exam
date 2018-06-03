@@ -4,23 +4,26 @@ import MapKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var mapView: MKMapView!
-    var artworks: [Artwork] = []
+    var bikestations: [BikeStation] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let initialLocation = CLLocation(latitude: 21.282778, longitude: -157.829444)
+        let initialLocation = CLLocation(latitude: 48.208415, longitude: 16.371282)
         centerMapOnLocation(location: initialLocation)
         
         mapView.delegate = self
         //        mapView.register(ArtworkMarkerView.self,
         //                         forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
         
-        mapView.register(ArtworkView.self,
+        mapView.register(BikeStationView.self,
                          forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
         
         loadInitialData()
-        mapView.addAnnotations(artworks)
+        
+        debugPrint(bikestations)
+        
+        mapView.addAnnotations(bikestations)
         
     }
     
@@ -32,18 +35,29 @@ class ViewController: UIViewController {
     }
     
     func loadInitialData() {
-        guard let fileName = Bundle.main.path(forResource: "PublicArt", ofType: "json")
-            else { return }
+        debugPrint("I'm in the function.")
+        guard let fileName = Bundle.main.path(forResource: "Citybikes", ofType: "json")
+            else {return}
         let optionalData = try? Data(contentsOf: URL(fileURLWithPath: fileName))
-        
+
         guard
             let data = optionalData,
             let json = try? JSONSerialization.jsonObject(with: data),
-            let dictionary = json as? [String: Any],
-            let works = dictionary["data"] as? [[Any]]
-            else { return }
-        let validWorks = works.flatMap { Artwork(json: $0) }
-        artworks.append(contentsOf: validWorks)
+            let stations = json as? [[String: Any]]
+        
+            else { debugPrint("Shit happened."); return}
+        
+        debugPrint("List of stations now:")
+        debugPrint(stations)
+        
+        var validStations = [BikeStation]()
+        for station in stations {
+            var typeCastedStation = BikeStation(bikeStationDictionary: station)
+            validStations.append(typeCastedStation!)
+        }
+        
+        bikestations.append(contentsOf: validStations)
+        
     }
     
 }
@@ -68,7 +82,7 @@ extension ViewController: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView,
                  calloutAccessoryControlTapped control: UIControl) {
-        let location = view.annotation as! Artwork
+        let location = view.annotation as! BikeStation
         let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
         location.mapItem().openInMaps(launchOptions: launchOptions)
     }
