@@ -1,51 +1,29 @@
 //
 //  ArtworkViews.swift
-//  HonoluluArt
 //
 //  Created by Clemens Stift on 30.05.18.
-//  Copyright © 2018 Ray Wenderlich. All rights reserved.
 //
 
 import Foundation
 import MapKit
 
-class BikestationMarkerView: MKMarkerAnnotationView {
+class BikeStationMarkerView: MKMarkerAnnotationView {
     override var annotation: MKAnnotation? {
         willSet {
-            guard let artwork = newValue as? BikeStation else { return }
-            canShowCallout = true
-            calloutOffset = CGPoint(x: -5, y: 5)
-            rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-            markerTintColor = artwork.markerTintColor
-            //            glyphText = String(artwork.discipline.first!)
-            if let imageName = artwork.imageName {
-                glyphImage = UIImage(named: imageName)
-            } else {
-                glyphImage = nil
-            }
-        }
-    }
-}
-
-class BikeStationView: MKAnnotationView {
-    override var annotation: MKAnnotation? {
-        willSet {
-            guard let artwork = newValue as? BikeStation else {return}
+            guard let bikestation = newValue as? BikeStation else {return}
             canShowCallout = true
             calloutOffset = CGPoint(x: -5, y: 5)
             let mapsButton = UIButton(frame: CGRect(origin: CGPoint.zero,
                                                     size: CGSize(width: 30, height: 30)))
             mapsButton.setBackgroundImage(UIImage(named: "Maps-icon"), for: UIControlState())
             rightCalloutAccessoryView = mapsButton
-            if let imageName = artwork.imageName {
-                image = UIImage(named: imageName)
-            } else {
-                image = nil
-            }
+            markerTintColor = bikestation.markerTintColor
+            glyphText = String(bikestation.freeBikes)
+            
             let detailLabel = UILabel()
             detailLabel.numberOfLines = 0
             detailLabel.font = detailLabel.font.withSize(12)
-            detailLabel.text = artwork.subtitle
+            detailLabel.text = bikestation.subtitle
             detailCalloutAccessoryView = detailLabel
         }
     }
